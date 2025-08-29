@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-in-One Insurance CRM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+    @media (max-width: 768px) {
+      section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <section class="bg-gradient-to-br from-blue-600 to-blue-400 text-white text-center px-4">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-balance">
+        An All-in-One CRM, Designed for Insurance Agents.
+      </h1>
+      <p class="text-xl md:text-2xl mb-10 opacity-90 text-balance">
+        It’s more than just a tool. It’s your complete partner to <strong>Remember, Connect, and Execute.</strong>
+      </p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <a href="#features" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <i class="fas fa-arrow-right mr-2"></i> Explore Features
+        </a>
+        <a href="#differentiators" class="text-white border border-white px-8 py-4 rounded-full hover:bg-white hover:bg-opacity-10 transition-colors duration-300">
+          <i class="fas fa-chart-line mr-2"></i> See the Difference
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Are you tired of juggling?</h2>
+      <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+        Managing clients shouldn’t be a challenge. We help you solve the most common frustrations.
+      </p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm">
+          <div class="text-4xl mb-4 text-blue-500">
+            <i class="fas fa-folder-open"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Scattered Data</h3>
+          <p class="text-sm text-gray-500">Customer information is disorganized across notepads and spreadsheets.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm">
+          <div class="text-4xl mb-4 text-blue-500">
+            <i class="fas fa-calendar-times"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Missed Opportunities</h3>
+          <p class="text-sm text-gray-500">You've lost clients by forgetting key dates like birthdays or renewals.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm">
+          <div class="text-4xl mb-4 text-blue-500">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Referral Gaps</h3>
+          <p class="text-sm text-gray-500">Your network isn't growing as it should due to weak referral tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Our Core Values</h2>
+      <p class="text-xl text-gray-600 mb-12">
+        <strong>Remember. Connect. Execute.</strong>
+      </p>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <i class="fas fa-lightbulb text-5xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Remember</h3>
+          <p class="text-gray-600">We keep track of every client detail and important date, so you don't have to.</p>
+        </div>
+        <div>
+          <i class="fas fa-link text-5xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Connect</h3>
+          <p class="text-gray-600">Seamlessly link family members and policies to build a comprehensive client view.</p>
+        </div>
+        <div>
+          <i class="fas fa-rocket text-5xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Execute</h3>
+          <p class="text-gray-600">Automate your to-dos and stay ahead with proactive notifications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="bg-white px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Features that work for you.</h2>
+      <p class="text-xl text-gray-600 mb-12">
+        A suite of tools designed to simplify your workflow and grow your business.
+      </p>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-2">Intelligent Client Management</h3>
+            <p class="text-gray-600">Automatic ID creation, status filters, and a single dashboard for all client data.</p>
+          </div>
+          <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-2">Automated To-Do List</h3>
+            <p class="text-gray-600">Daily and weekly task lists are generated automatically, keeping you on track.</p>
+          </div>
+          <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-2">Integrated Policy View</h3>
+            <p class="text-gray-600">See all 8 policy types at a glance, eliminating the need to switch between screens.</p>
+          </div>
+        </div>
+        <div class="bg-gray-200 rounded-3xl overflow-hidden flex items-center justify-center p-8">
+          <div class="w-full h-72 bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 font-bold">
+            [ Placeholder for Screenshot / Video ]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="differentiators" class="bg-gray-100 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">This App</h2>
+      <div class="overflow-x-auto bg-white rounded-3xl p-6 shadow-xl">
+        <table class="table-auto w-full border-collapse">
+          <thead>
+            <tr class="text-left bg-gray-100">
+              <th class="px-4 py-4 font-semibold text-gray-500 rounded-tl-xl">Feature</th>
+              <th class="px-4 py-4 font-semibold text-gray-500">Zoho CRM</th>
+              <th class="px-4 py-4 font-semibold text-gray-500">Notion</th>
+              <th class="px-4 py-4 font-semibold text-gray-500">Slack</th>
+              <th class="px-4 py-4 font-semibold text-gray-500">Monday.com</th>
+              <th class="px-4 py-4 font-semibold text-gray-500 rounded-tr-xl">Our CRM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Insurance Product View</td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Requires custom setup</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Not native</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Not a CRM tool</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">No specific view</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <p class="text-x text-green-500 mt-1">Dedicated view for 7 products</p>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Family Relationship Linking</td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Manual effort required</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Manual effort required</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Not a CRM tool</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">No specific functionality</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <p class="text-x text-green-500 mt-1">Automatic linking</p>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Automated Notifications</td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Requires setup</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Manual calendar required</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Requires separate app</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Requires setup</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <p class="text-x text-green-500 mt-1">Automated calendar and reminders</p>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Product Status Categories</td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <p class="text-xs text-gray-500 mt-1">Requires custom fields</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Manual tagging</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-red-500 font-bold">-</span>
+                <p class="text-xs text-gray-500 mt-1">Not a CRM tool</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <p class="text-xs text-gray-500 mt-1">Requires custom fields</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <p class="text-x text-green-500 mt-1">Automatic classification</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-4 font-medium">Ease of Use</td>
+              <td class="px-4 py-4 text-center">
+                <p class="text-red-500 font-bold">Difficult</p>
+                <p class="text-xs text-gray-500 mt-1">Complex initial setup</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <p class="text-red-500 font-bold">Difficult</p>
+                <p class="text-xs text-gray-500 mt-1">Requires manual build</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <p class="text-red-500 font-bold">Difficult</p>
+                <p class="text-xs text-gray-500 mt-1">Requires integrations</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <p class="text-yellow-500 font-bold">Moderate</p>
+                <p class="text-xs text-gray-500 mt-1">Template-based</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <p class="text-green-500 font-bold">Intuitive</p>
+                <p class="text-x text-blue-500 font-bold mt-1">App-like UI</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Key Disadvantages of Competitors</h2>
+      <div class="overflow-x-auto bg-gray-100 rounded-3xl p-6 shadow-sm">
+        <table class="table-auto w-full border-collapse">
+          <thead>
+            <tr class="text-left">
+              <th class="px-4 py-4 font-semibold text-gray-500">Platform</th>
+              <th class="px-4 py-4 font-semibold text-gray-500">Key Disadvantage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Zoho CRM</td>
+              <td class="px-4 py-4">Requires extensive <strong>customization and technical knowledge</strong> to fit the insurance industry's unique needs.</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Notion</td>
+              <td class="px-4 py-4">Lacks native CRM features, forcing users to <strong>manually build and manage</strong> all data structures.</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Slack</td>
+              <td class="px-4 py-4">Is a <strong>communication tool, not a CRM</strong>, requiring integration with a separate application for core client management.</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Monday.com</td>
+              <td class="px-4 py-4">Not purpose-built for insurance, lacking <strong>automatic linking and specialized views</strong> that are critical for agents.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-blue-600 text-white text-center px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Transform Your Business?</h2>
+      <p class="text-lg md:text-xl mb-8 opacity-90">
+        Stop managing, start selling. Our CRM is easy to set up and works on any device.
+      </p>
+      <a href="mailto:titusdatalabs@gmail.com" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <i class="fas fa-envelope mr-2"></i> Schedule a Consultation
+      </a>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-400 text-sm py-8">
+    <p>ⓒ 2025 AppSheet Insurance CRM. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
