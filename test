@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+Put your HTML text here<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -25,6 +25,9 @@
     }
   </style>
 </head>
+
+
+
 <body class="font-sans bg-gray-50 text-gray-800">
 
   <section class="bg-gradient-to-br from-blue-600 to-blue-400 text-white text-center px-4">
@@ -98,7 +101,7 @@
         <div>
           <i class="fas fa-rocket text-5xl text-blue-600 mb-4"></i>
           <h3 class="text-2xl font-semibold mb-2">Execute</h3>
-          <p class="text-gray-600">Automate your to-dos and stay ahead with proactive notifications.</p>
+          <p class="text-gray-600">Automate your To-Dos and stay ahead with proactive notifications.</p>
         </div>
       </div>
     </div>
@@ -127,27 +130,79 @@
         </div>
         <div class="bg-gray-200 rounded-3xl overflow-hidden flex items-center justify-center p-8">
           <div class="w-full h-72 bg-gray-300 rounded-xl flex items-center justify-center text-gray-500 font-bold">
-            [ Placeholder for Screenshot / Video ]
+            <!--[ Placeholder for Screenshot / Video ]-->
+            
+            <!-- 1-1. 히어로 버튼 추가 -->
+            <!--<a href="#!" id="openDemo" class="bg-white/10 border border-white px-8 py-4 rounded-full hover:bg-white/20 transition">-->
+            <!--  <i class="fas fa-play mr-2"></i> 20-sec Demo-->
+            <!--</a>-->
+            
+            <!-- 1-2. 모달 -->
+            <!--<div id="demoModal" class="fixed inset-0 z-[60] hidden">-->
+            <!--  <div class="absolute inset-0 bg-black/60"></div>-->
+            <!--  <div class="relative mx-auto mt-20 w-[92%] max-w-3xl rounded-2xl overflow-hidden shadow-2xl">-->
+            <!--    <div class="bg-black aspect-video">-->
+                  <!-- 여기에 mp4 또는 webm, 혹은 GIF -->
+            <!--      <video id="demoVideo" class="w-full h-full" src="YOUR_DEMO_VIDEO.mp4" autoplay muted playsinline></video>-->
+            <!--    </div>-->
+            <!--    <button id="closeDemo" class="absolute -right-3 -top-3 bg-white rounded-full shadow p-2">-->
+            <!--      <i class="fa-solid fa-xmark"></i>-->
+            <!--    </button>-->
+            <!--  </div>-->
+            <!--</div>-->
+            
+            <!--<section class="bg-white px-6">-->
+            <!--  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">-->
+            <!--    <div><p class="text-4xl font-extrabold" data-count="7">0</p><p class="text-gray-500">Insurance Views</p></div>-->
+            <!--    <div><p class="text-4xl font-extrabold" data-count="95">0</p><p class="text-gray-500">% Tasks Auto-Generated</p></div>-->
+            <!--    <div><p class="text-4xl font-extrabold" data-count="3">0</p><p class="text-gray-500">Devices Supported</p></div>-->
+            <!--    <div><p class="text-4xl font-extrabold" data-count="0.5">0</p><p class="text-gray-500">Days to Onboard</p></div>-->
+            <!--  </div>-->
+            <!--</section>-->
+            <!--<script>-->
+            <!--  const els=[...document.querySelectorAll('[data-count]')];-->
+            <!--  const obs=new IntersectionObserver((e)=>e.forEach(x=>{-->
+            <!--    if(x.isIntersecting){ const el=x.target; const end=+el.dataset.count; let cur=0;-->
+            <!--      const step=()=>{ cur=Math.min(end, +(cur+Math.max(end/40,0.2)).toFixed(1)); el.textContent=cur;-->
+            <!--        if(cur<end) requestAnimationFrame(step);-->
+            <!--      }; step(); obs.unobserve(el);-->
+            <!--    }}),{threshold:.4});-->
+            <!--  els.forEach(el=>obs.observe(el));-->
+            <!--</script>-->
+
+            
+            <script>
+              const openDemo = document.getElementById('openDemo');
+              const closeDemo = document.getElementById('closeDemo');
+              const demoModal = document.getElementById('demoModal');
+              const demoVideo = document.getElementById('demoVideo');
+              openDemo?.addEventListener('click', ()=>{ demoModal.classList.remove('hidden'); demoVideo.play(); });
+              closeDemo?.addEventListener('click', ()=>{ demoModal.classList.add('hidden'); demoVideo.pause(); demoVideo.currentTime=0; });
+            </script>
+
+            
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="differentiators" class="bg-gray-100 px-6">
+  <section id="differentiators" class="bg-gray-100 px-">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12">This App</h2>
+      <h3 class="text-4xl font-bold text-center mb-2"> All-in-One CRM </h3>
+      <h3 class="text-4xl font-bold text-center mb-8"> Designed for Insurance, Built for You </h3>
       <div class="overflow-x-auto bg-white rounded-3xl p-6 shadow-xl">
         <table class="table-auto w-full border-collapse">
           <thead>
-            <tr class="text-left bg-gray-100">
-              <th class="px-4 py-4 font-semibold text-gray-500 rounded-tl-xl">Feature</th>
-              <th class="px-4 py-4 font-semibold text-gray-500">Zoho CRM</th>
-              <th class="px-4 py-4 font-semibold text-gray-500">Notion</th>
-              <th class="px-4 py-4 font-semibold text-gray-500">Slack</th>
-              <th class="px-4 py-4 font-semibold text-gray-500">Monday.com</th>
-              <th class="px-4 py-4 font-semibold text-gray-500 rounded-tr-xl">Our CRM</th>
-            </tr>
+                <tr class="text-center bg-gray-100">
+                  <th class="px-4 py-4 font-semibold text-gray-500 rounded-tl-xl">Feature</th>
+                  <th class="px-4 py-4 font-semibold text-gray-500">Zoho CRM</th>
+                  <th class="px-4 py-4 font-semibold text-gray-500">Notion</th>
+                  <th class="px-4 py-4 font-semibold text-gray-500">Slack</th>
+                  <th class="px-4 py-4 font-semibold text-gray-500">Monday.com</th>
+                  <th class="px-4 py-4 font-semibold text-gray-500 rounded-tr-xl">Our CRM</th>
+                </tr>
+
           </thead>
           <tbody>
             <tr class="border-b border-gray-200">
@@ -170,7 +225,7 @@
               </td>
               <td class="px-4 py-4 text-center">
                 <span class="text-green-500 font-bold">+</span>
-                <p class="text-x text-green-500 mt-1">Dedicated view for 7 products</p>
+                <p class="text-x text-green-500 mt-1">7 Dedicated views</p>
               </td>
             </tr>
             <tr class="border-b border-gray-200">
@@ -242,7 +297,7 @@
                 <p class="text-x text-green-500 mt-1">Automatic classification</p>
               </td>
             </tr>
-            <tr>
+            <tr class="border-b border-gray-200">
               <td class="px-4 py-4 font-medium">Ease of Use</td>
               <td class="px-4 py-4 text-center">
                 <p class="text-red-500 font-bold">Difficult</p>
@@ -265,11 +320,46 @@
                 <p class="text-x text-blue-500 font-bold mt-1">App-like UI</p>
               </td>
             </tr>
+            <tr class="border-b border-gray-200">
+              <td class="px-4 py-4 font-medium">Multi-Device (Mobile · Tablet · Web)</td>
+            
+              <!-- 다른 서비스: 중립 표기 -->
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Varies by plan/setup</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Has apps; limited CRM use</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Messaging-first</p>
+              </td>
+              <td class="px-4 py-4 text-center">
+                <span class="text-yellow-500 font-bold">~</span>
+                <p class="text-xs text-gray-500 mt-1">Template-based apps</p>
+              </td>
+            
+              <!-- Our CRM: 강점 표기 + 배지 -->
+              <td class="px-4 py-4 text-center">
+                <span class="text-green-500 font-bold">+</span>
+                <div class="mt-2 flex items-center justify-center gap-2">
+                  <span class="rounded-full border px-2 py-0.5 text-xs text-blue-600 border-blue-200 font-bold">Mobile</span>
+                  <span class="rounded-full border px-2 py-0.5 text-xs text-blue-600 border-blue-200 font-bold">Tablet</span>
+                  <span class="rounded-full border px-2 py-0.5 text-xs text-blue-600 border-blue-200 font-bold">Web</span>
+                </div>
+              </td>
+            </tr>
+
+        
           </tbody>
         </table>
       </div>
     </div>
   </section>
+  
+  
 
   <section class="bg-white px-6">
     <div class="max-w-5xl mx-auto">
@@ -304,6 +394,79 @@
       </div>
     </div>
   </section>
+  
+  <section class="bg-gray-100 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">What Agents Are Saying</h2>
+    <div class="overflow-x-auto snap-x snap-mandatory flex gap-6 pb-4">
+      <article class="min-w-[80%] md:min-w-[45%] bg-white p-6 rounded-2xl shadow snap-start">
+        <p class="text-lg">“Birthday/renewal 자동 알림 덕분에 리텐션이 확 올랐어요.”</p>
+        <div class="mt-4 text-sm text-gray-500">— J. Park, Medicare Specialist</div>
+      </article>
+      <article class="min-w-[80%] md:min-w-[45%] bg-white p-6 rounded-2xl shadow snap-start">
+        <p class="text-lg">“가족 링크/공동가입 보기가 신세계. 상담이 빨라졌습니다.”</p>
+        <div class="mt-4 text-sm text-gray-500">— H. Kim, Life & Annuity</div>
+      </article>
+      <article class="min-w-[80%] md:min-w-[45%] bg-white p-6 rounded-2xl shadow snap-start">
+        <p class="text-lg">“모바일·태블릿·웹 모두 동일 UI. 팀 온보딩 0.5일 컷.”</p>
+        <div class="mt-4 text-sm text-gray-500">— A. Lee, Agency Owner</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-white px-6" id="pricing">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-2">Pricing that scales with you</h2>
+    <p class="text-gray-600 mb-8">에이전시 규모/기능에 맞춰 커스텀 견적을 드립니다.</p>
+    <form action="https://formspree.io/f/yourid" method="POST" class="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+      <input name="email" type="email" required placeholder="Work email" class="px-4 py-3 rounded-xl border">
+      <input name="teamSize" placeholder="Team size (e.g., 1–5)" class="px-4 py-3 rounded-xl border">
+      <button class="bg-blue-600 text-white px-4 py-3 rounded-xl font-semibold hover:bg-blue-700">Get a Quote</button>
+    </form>
+    <p class="text-xs text-gray-400 mt-3">No spam. We reply within 24h.</p>
+  </div>
+</section>
+
+
+<section class="bg-gray-100 px-6" id="faq">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">FAQ</h2>
+    <div class="space-y-3">
+      <details class="bg-white rounded-xl p-4 shadow">
+        <summary class="cursor-pointer font-semibold">AppSheet 기반인가요?</summary>
+        <p class="mt-2 text-gray-600">네. 보험 에이전트 워크플로우에 특화된 구조로 커스터마이즈되어 있습니다.</p>
+      </details>
+      <details class="bg-white rounded-xl p-4 shadow">
+        <summary class="cursor-pointer font-semibold">데이터는 어디에 저장되나요?</summary>
+        <p class="mt-2 text-gray-600">귀사의 구글 워크스페이스/시트(또는 추후 Firebase/SQL)로 관리됩니다.</p>
+      </details>
+      <details class="bg-white rounded-xl p-4 shadow">
+        <summary class="cursor-pointer font-semibold">모바일/태블릿에서도 모든 기능되나요?</summary>
+        <p class="mt-2 text-gray-600">네. 동일한 UI/기능로 현장에서도 업무가 가능합니다.</p>
+      </details>
+    </div>
+  </div>
+  
+</section>
+
+<!-- FAQ JSON-LD -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"AppSheet 기반인가요?","acceptedAnswer":{"@type":"Answer","text":"네. 보험 에이전트 워크플로우에 특화된 구조로 커스터마이즈되어 있습니다."}},
+  {"@type":"Question","name":"데이터는 어디에 저장되나요?","acceptedAnswer":{"@type":"Answer","text":"귀사의 구글 워크스페이스/시트(또는 추후 Firebase/SQL)로 관리됩니다."}},
+  {"@type":"Question","name":"모바일/태블릿에서도 모든 기능되나요?","acceptedAnswer":{"@type":"Answer","text":"네. 동일한 UI/기능로 현장에서도 업무가 가능합니다."}}
+ ]
+}
+</script>
+
+
+
+  
 
   <section id="contact" class="bg-blue-600 text-white text-center px-6">
     <div class="max-w-3xl mx-auto">
@@ -311,7 +474,7 @@
       <p class="text-lg md:text-xl mb-8 opacity-90">
         Stop managing, start selling. Our CRM is easy to set up and works on any device.
       </p>
-      <a href="mailto:titusdatalabs@gmail.com" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <a href="mailto:info@titusdl.com" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300">
         <i class="fas fa-envelope mr-2"></i> Schedule a Consultation
       </a>
     </div>
